@@ -1,0 +1,109 @@
+<head></head>
+<body>
+    <div></div>
+</body>
+<div id="gameContainer"></div>
+<div id="templates" style="display: none">
+    <div class="nodeDetails">
+        <div>
+            <img class="nodeIcon" src="">
+            <div class="iconText">
+                <img src="assets/shield.png" class="defendIcon">
+                <div class="defendHealth">0</div>
+            </div>
+        </div>
+        <div class="programSlots">
+            <div class="programSlot">
+                <img src="assets/circle.png" class="slotImage">
+                <img src="" class="slotImage programIcon">
+            </div>
+        </div>
+        <div class="installerSlots">
+            <div class="installerSlot">
+                <div class="installerImageContainer">
+                    <img src="assets/circle.png" class="slotImage">
+                    <img src="" class="slotImage installerIcon">
+                </div>
+                <div class="installerName"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .iconText {
+        display: inline-block;
+    }
+
+    .installerSlots {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .installerSlot, .programSlot.hasProgram {
+        cursor: pointer;
+    }
+
+    .nodeDetails {
+        height: 100%;
+        position: relative;
+    }
+
+    .nodeDetails .nodeIcon {
+        width: 40px; height: 40px;
+    }
+
+    .nodeDetails .attackIcon, .nodeDetails .defendIcon {
+        width: 15px; height: 15px;
+    }
+    
+    .defendHealth {
+        display: inline-block;
+        color: white;
+        position: relative;
+        top: -2px;
+    }
+
+    .programSlot, .installerImageContainer {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .slotImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .programIcon, .installerIcon {
+        width: 70%;
+        height: 70%;
+        top: 15%;
+        left: 15%;
+    }
+
+    .installerName {
+        display: inline-block;
+        color: white;
+        position: relative;
+        bottom: 13px;
+        max-width: 150px;
+    }
+</style>
+
+<script src="./lib/pixijs/pixi.min.js"></script>
+
+<script src="js/Game/AssetLoader.js"></script>
+<script src="js/Game/Game.js"></script>
+<script src="js/Game/GameUI.js"></script>
+<script src="js/Game/constants.js"></script>
+<script src="js/Game/NetworkNode.js"></script>
+<script src="js/Game/NetworkOwner.js"></script>
+<script src="js/Game/Program.js"></script>
+<script src="js/Game/Packet.js"></script>
+<script src="js/Game/Installer.js"></script>
+
+<script src="js/main.js"></script>

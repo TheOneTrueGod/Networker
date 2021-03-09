@@ -1,0 +1,5 @@
+const PLAYER_HUMAN = 0;
+const PLAYER_COMPUTER_1 = 1;
+const PLAYER_COMPUTER_2 = 2;
+const PLAYER_COMPUTER_3 = 3;
+const PLAYER_COMPUTER_4 = 4;
